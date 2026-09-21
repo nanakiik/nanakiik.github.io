@@ -1,0 +1,12 @@
+## https://docs.github.com/en/rest?apiVersion=2022-11-28
+##  Profile → Settings → Developer settings → Personal access tokens
+@ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://api.github.com/users/nanakiik/starred?per_page=100&page=1
+Accept: application/vnd.github+json
+User-Agent: {{ua}}
+
+###
+GET https://api.github.com/users/nanakiik/following
+Accept: application/vnd.github+json
+User-Agent: {{ua}}
+

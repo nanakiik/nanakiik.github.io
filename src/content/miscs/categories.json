@@ -12,6 +12,18 @@
     "icon": "mdi:coffee"
   },
   {
+    "name": "acgn",
+    "slug": "acgn",
+    "description": "acgn",
+    "icon": "mdi:controller"
+  },
+  {
+    "name": "tools",
+    "slug": "tools",
+    "description": "tools",
+    "icon": "mdi:tools"
+  },
+  {
     "name": "未分类",
     "slug": "uncategorized",
     "description": "不知道放哪的",
