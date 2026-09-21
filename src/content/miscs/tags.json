@@ -10,5 +10,9 @@
   {
     "name": "音视频",
     "slug": "audio_video"
+  },
+  {
+    "name": "cheatsheet",
+    "slug": "cheatsheet"
   }
 ]

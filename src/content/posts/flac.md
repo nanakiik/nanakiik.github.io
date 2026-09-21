@@ -2,7 +2,7 @@
 title: flac编解码 
 createdAt: 2026-03-03
 category: technology
-tags: [astro]
+tags: [audio_video]
 summary: 关于flac
 ---
 

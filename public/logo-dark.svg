@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
  <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
  <g class="layer">
   <title>Layer 1</title>
-  <path fill="#ffaad4" stroke="#000000" stroke-width="5" d="m125.78,370.4l91.5,-88.25l0,44.12l137.25,0l0,-132.37l-45.75,0l91.5,-88.25l91.5,88.25l-45.75,0l0,220.62l-228.75,0l0,44.12l-91.5,-88.25z" id="svg_1" transform="rotate(-111.133 308.781 282.154)"/>
+  <path fill="#ffaaaa" stroke="#000000" stroke-width="5" d="m83.53,366.91l83,-95.5l0,47.75l124.5,0l0,-143.25l-41.5,0l83,-95.5l83,95.5l-41.5,0l0,238.75l-207.5,0l0,47.75l-83,-95.5z" id="svg_1" transform="rotate(-114.573 249.534 271.411)"/>
  </g>
 </svg>
