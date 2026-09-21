@@ -1,0 +1,19 @@
+[
+  {
+    "name": "编程",
+    "slug": "technology",
+    "description": "编程和web开发",
+    "icon": "mdi:code-tags"
+  },
+  {
+    "name": "生活",
+    "slug": "life",
+    "description": "日常生活琐事",
+    "icon": "mdi:coffee"
+  },
+  {
+    "name": "未分类",
+    "slug": "uncategorized",
+    "icon": "mdi:folder"
+  }
+]

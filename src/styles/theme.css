@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  /* --- Light Mode: Sage Mist --- */
+  --background: oklch(0.98 0.008 165);
+  --foreground: oklch(0.25 0.02 165);
+
+  --card: oklch(0.99 0.005 165);
+  --card-foreground: oklch(0.25 0.02 165);
+
+  --primary: oklch(35.412% 0.01262 304.965);
+  --primary-foreground: oklch(0.98 0.01 165);
+
+  --muted: oklch(0.94 0.01 165);
+  --muted-foreground: oklch(0.35 0.02 165);
+
+  --border: oklch(0.92 0.01 165);
+  --shadow-main: 0 10px 40px -10px oklch(0.3 0.05 165 / 0.05);
+
+  --callout-info: oklch(0.65 0.12 250);
+  --callout-warning: oklch(0.7 0.15 85);
+  --callout-danger: oklch(0.62 0.18 28);
+  --callout-success: oklch(43.854% 0.01533 171.885);
+}
+
+.dark {
+  /* --- Dark Mode: Deep Moss --- */
+  --background: oklch(0.14 0.02 165);
+  --foreground: oklch(0.92 0.005 165);
+
+  --card: oklch(0.18 0.02 165);
+  --card-foreground: oklch(0.88 0.01 165);
+
+  --primary: oklch(63.051% 0.03283 166.946);
+  --primary-foreground: oklch(0.1 0.02 165);
+
+  --muted: oklch(0.28 0.02 160);
+  --muted-foreground: oklch(0.75 0.015 165);
+
+  --border: oklch(0.26 0.02 165);
+  --shadow-main: 0 30px 60px -15px oklch(0 0 0 / 0.5);
+
+  --callout-info: oklch(48.321% 0.02446 248.389);
+  --callout-warning: oklch(44.249% 0.00839 88.699);
+  --callout-danger: oklch(34.517% 0.01131 17.524);
+  --callout-success: oklch(63.225% 0.03017 167.378);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --shadow-main: var(--shadow-main);
+  --font-display: var(--font-display);
+}

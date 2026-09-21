@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+    href: string;
+}
+
+const { href } = Astro.props;
+
+const isExternalLink = href.startsWith("http");
+---
+
+<>
+    {
+        isExternalLink ? (
+            <a href={href} target="_blank" class="hover:text-primary">
+                <slot />
+                <Icon
+                    name={"mdi:external-link"}
+                    class={"ml-1 inline-block"}
+                    size={14}
+                />
+            </a>
+        ) : (
+            <a href={href} class="hover:text-primary">
+                <slot />
+            </a>
+        )
+    }
+</>
