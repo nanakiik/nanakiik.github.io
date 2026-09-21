@@ -54,13 +54,3 @@ CRC 校验码是基于数据块的前几个字节计算的，包括数据块类�
 
 ## 滤波
 ![](./filter.svg)
-
-## 其他工具用法
-```
-exiftool -v5 1.png
-mediainfo -f 1.png
-pngcheck -cvvt 1.png
-magick 1.png -depth 8 rgb:1.rgb
-magick identify -verbose 1.png
-magick 1.jpg -resize 50% 1.png
-```

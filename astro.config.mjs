@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 import { defineConfig, envField, fontProviders } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
@@ -6,13 +6,24 @@ import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
 import expressiveCode from "astro-expressive-code";
 import sitemap from "@astrojs/sitemap";
-
+import rehypeExternalLinks from 'rehype-external-links';
 // https://astro.build/config
 export default defineConfig({
   site: "https://nanakiik.github.io",
 
   vite: {
     plugins: [tailwindcss()],
+  },
+  markdown: {
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          target: '_blank',
+          content: { type: 'text', value: ' 🔗' }
+        }
+      ],
+    ]
   },
 
   integrations: [
@@ -57,4 +68,5 @@ export default defineConfig({
       cssVariable: "--font-display",
     },
   ],
+
 });

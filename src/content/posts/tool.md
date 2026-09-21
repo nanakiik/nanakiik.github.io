@@ -1,9 +1,9 @@
 ---
-title: 实用工具
+title: 不实用工具
 createdAt: 2023-07-23
 category: uncategorized
 tags: [cheatsheet]
-summary: 实用小工具及其常见用法
+summary: 不实用小工具及其常见用法
 ---
 
 [static-web-server](https://github.com/static-web-server/static-web-server)
@@ -27,4 +27,56 @@ git config --global --list
 git config user.name makishinanakishi
 git config user.email makishinanakishi@outlook.com
 git config user.signingkey ~/.ssh/makishi.pub
+```
+
+---
+
+## 音视频图片领域的工具及一些用法
+
+### 通用工具
+
+[ffmpeg](https://ffmpeg.org/)
+```
+ffmpeg -i input.mp4 output.avi
+ffprobe -formats
+```
+
+[exiftool](https://exiftool.org)
+```code
+exiftool -v5 1.png
+```
+
+[magick](https://imagemagick.org/command-line-tools)
+```
+magick identify -verbose 1.png
+magick 1.png -depth 8 rgb:1.rgb
+```
+[mediainfo](https://mediaarea.net/en/MediaInfo)
+```
+mediainfo -f 1.png
+```
+
+### 非通用工具
+
+[pngcheck](https://github.com/pnggroup/pngcheck)
+```
+pngcheck -cvvt 1.png
+```
+
+[flac](https://github.com/xiph/flac)
+```
+metaflac --list --except-block-type=PICTURE 1.flac 
+flac -a 1.flac
+flac -8 -V --keep-foreign-metadata *.wav
+flac -d  --keep-foreign-metadata *.flac   (flac->wav)
+```
+
+[mkvtoolnix](https://mkvtoolnix.download/docs.html)
+```
+mkvinfo -v 1.mkv
+
+```
+[webpinfo](https://github.com/webmproject/libwebp)
+```
+webpinfo  -summary -bitstream_info 1.webp
 ```

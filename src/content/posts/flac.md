@@ -9,13 +9,9 @@ summary: 关于flac
 `flac` 全称叫 `Free Lossless Audio Codec`
 
 
-`flac` 的规范在 
+`flac` 的规范在 https://datatracker.ietf.org/doc/html/rfc9639
 
-`https://datatracker.ietf.org/doc/html/rfc9639`
-
-其他可能有用的链接 
-
-https://xiph.org/flac/documentation_tools.html
+其他可能有用的链接 https://xiph.org/flac/documentation_tools.html
 
 FLAC 之所以能够实现无损压缩，是因为音频信号中的样本往往与其相邻样本高度相关。与通常使用字典、游程编码或利用长期重复的通用压缩器不同，FLAC 仅在极短的时间内去除冗余，最多只回溯 32 个样本。
 
