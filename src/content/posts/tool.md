@@ -15,7 +15,7 @@ static-web-server --root . -p 1234 -a 127.0.0.1
 
 [cmake](https://cmake.org/cmake/help/latest/)
 ```
-cmake -S . -B build -A x64
+cmake -S . -B build  -G Ninja -A x64 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 cmake --build build --config Release 
 ```
 
@@ -95,4 +95,9 @@ webpinfo  -summary -bitstream_info 1.webp
 [avif](https://github.com/aomediacodec/libavif)
 ```
 avifdec -i 1.avif
+```
+
+[isobmff](https://github.com/MPEGGroup/isobmff)
+```
+isoiff_tool -m 1 -i 1.jxl -o 1.txt -d 5
 ```

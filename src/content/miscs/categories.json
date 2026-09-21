@@ -24,6 +24,12 @@
     "icon": "mdi:tools"
   },
   {
+    "name": "math",
+    "slug": "math",
+    "description": "math",
+    "icon": "mdi:math-integral"
+  },
+  {
     "name": "未分类",
     "slug": "uncategorized",
     "description": "不知道放哪的",

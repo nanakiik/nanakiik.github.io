@@ -18,5 +18,9 @@
   {
     "name": "acgn",
     "slug": "acgn"
+  },
+  {
+    "name": "math",
+    "slug": "math"
   }
 ]
