@@ -11,15 +11,14 @@ summary: 不实用小工具及其常见用法
 static-web-server --root . -p 1234 -a 127.0.0.1
 ```
 
----
-
 [cmake](https://cmake.org/cmake/help/latest/)
 ```
 cmake -S . -B build  -G Ninja -A x64 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 cmake --build build --config Release 
-```
+cmake --install build
 
----
+cmake .. --graphviz=dot & dot Tsvg dot -o dot.svg
+```
 
 [git](https://git-scm.com/)
 ```
@@ -37,10 +36,8 @@ git tag v0.1.0 新建tag
 git remote set-url origin <url>
 
 git submodule add <url> <name>
-git submodule update --init --recursive --depth 1
+git submodule update --init --recursive --depth 1 --recommend-shallow
 ```
-
----
 
 ## 音视频图片领域的工具及一些用法
 
@@ -62,9 +59,16 @@ exiftool -v5 1.png
 magick identify -verbose 1.png
 magick 1.png -depth 8 rgb:1.rgb
 ```
+
 [mediainfo](https://mediaarea.net/en/MediaInfo)
 ```
 mediainfo -f 1.png
+```
+
+[gpac](https://github.com/gpac/gpac)
+```
+mp4box -info 0.mp4
+gpac -info 0.mp4  
 ```
 
 ### 非通用工具
@@ -85,8 +89,8 @@ flac -d  --keep-foreign-metadata *.flac   (flac->wav)
 [mkvtoolnix](https://mkvtoolnix.download/docs.html)
 ```
 mkvinfo -v 1.mkv
-
 ```
+
 [webpinfo](https://github.com/webmproject/libwebp)
 ```
 webpinfo  -summary -bitstream_info 1.webp
@@ -97,7 +101,12 @@ webpinfo  -summary -bitstream_info 1.webp
 avifdec -i 1.avif
 ```
 
+[jxl](https://github.com/libjxl/libjxl)
+```
+jxlinfo -v 1.jxl
+```
+
 [isobmff](https://github.com/MPEGGroup/isobmff)
 ```
-isoiff_tool -m 1 -i 1.jxl -o 1.txt -d 5
+isoiff_tool -m 1  -o 1.txt -d 5 -i 0.mp4
 ```
