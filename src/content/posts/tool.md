@@ -18,6 +18,8 @@ cmake --build build --config Release
 cmake --install build
 
 cmake .. --graphviz=dot & dot Tsvg dot -o dot.svg
+
+cmake --find-package -DNAME=ZLIB -DCOMPILER_ID=GNU -DLANGUAGE=C -DMODE=LINK
 ```
 
 [git](https://git-scm.com/)
