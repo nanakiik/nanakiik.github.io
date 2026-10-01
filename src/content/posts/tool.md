@@ -45,6 +45,10 @@ git submodule update --init --recursive --depth 1 --recommend-shallow
 ```
 tshark -D
 tshark -i 5 -f "host 1.1.1.1 and tcp port 80"
+```
+
+[curl](https://curl.se/docs/manpage.html)
+```
 curl -x "" -v -4 http://example.com
 ```
 
@@ -52,5 +56,11 @@ curl -x "" -v -4 http://example.com
 [wsl](https://github.com/microsoft/WSL)
 ```
 https://learn.microsoft.com/en-us/windows/wsl/wsl-config
+wslc
+```
 
+[yt-dlp](https://github.com/yt-dlp/yt-dlp)
+```
+yt-dlp --skip-download  --write-pages 
+yt-dlp --list-extractors
 ```
