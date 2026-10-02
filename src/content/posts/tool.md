@@ -28,6 +28,9 @@ git config --global --list
 git config user.name makishinanakishi
 git config user.email makishinanakishi@outlook.com
 git config user.signingkey ~/.ssh/makishi.pub
+git config gpg.format ssh
+git config commit.gpgsign true
+
 git config --list --show-origin
 
 git push origin :refs/tags/v0.1.0 删除远程tag
@@ -37,7 +40,7 @@ git tag v0.1.0 新建tag
 
 git remote set-url origin <url>
 
-git submodule add <url> <name>
+git submodule add --depth 1 <url> <name>
 git submodule update --init --recursive --depth 1 --recommend-shallow
 ```
 
