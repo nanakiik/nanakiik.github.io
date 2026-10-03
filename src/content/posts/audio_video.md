@@ -13,6 +13,9 @@ summary: 不实用小工具及其常见用法
 mediainfo --Details=1 --Output=XML 1.h264
 ```
 
+[mpv](https://mpv.io)
+[mpv-build](https://github.com/zhongfly/mpv-winbuild)
+
 [ffmpeg](https://ffmpeg.org/)
 ```sh
 ffmpeg -i input.mp4 output.avi
