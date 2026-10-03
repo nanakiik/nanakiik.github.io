@@ -1,7 +1,7 @@
 ---
 title: ffmpeg编译
 createdAt: 2025-07-23
-category: tool
+category: tools
 tags: [cheatsheet,tutorial]
 summary: Windows下使用Clang编译FFmpeg静态库
 ---
