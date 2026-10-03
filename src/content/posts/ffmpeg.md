@@ -401,9 +401,7 @@ rm -rf build
 然后重新配置：
 
 ```bash
-cmake -S . -B build -G Ninja \
-  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
-  -DCMAKE_CXX_COMPILER="C:/Program Files/LLVM/bin/clang++.exe"
+cmake -S . -B build -G Ninja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_COMPILER="C:/Program Files/LLVM/bin/clang++.exe"
 ```
 
 ---
