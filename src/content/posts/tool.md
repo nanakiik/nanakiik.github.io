@@ -55,7 +55,6 @@ tshark -i 5 -f "host 1.1.1.1 and tcp port 80"
 curl -x "" -v -4 http://example.com
 ```
 
-
 [wsl](https://github.com/microsoft/WSL)
 ```
 https://learn.microsoft.com/en-us/windows/wsl/wsl-config
@@ -67,3 +66,8 @@ wslc
 yt-dlp --skip-download  --write-pages 
 yt-dlp --list-extractors
 ```
+
+[coreutils](https://uutils.org/coreutils/docs/index.html)
+[tokei](https://github.com/xampprocky/tokei)
+[typst](https://github.com/typst/typst)
+[spek](https://github.com/alexkay/spek)
