@@ -67,7 +67,12 @@ yt-dlp --skip-download  --write-pages
 yt-dlp --list-extractors
 ```
 
+[7z](https://www.7-zip.org)
 [coreutils](https://uutils.org/coreutils/docs/index.html)
 [tokei](https://github.com/xampprocky/tokei)
 [typst](https://github.com/typst/typst)
 [spek](https://github.com/alexkay/spek)
+[bottom](https://github.com/ClementTsang/bottom)
+[onefetch](https://github.com/o2sh/onefetch.git)
+[yazi](https://github.com/sxyazi/yazi)
+[magika](https://github.com/google/magika.git)
