@@ -108,7 +108,7 @@ cat ~/.ssh/test.pub
 
 写入：
 
-```sshconfig
+```sh
 Host test1
     HostName github.com
     User git
@@ -342,13 +342,13 @@ Git 就会自动使用当前仓库配置的 SSH Key 对 Commit 进行签名。
 
 中的：
 
-```sshconfig
+```sh
 IdentityFile ~/.ssh/test1
 ```
 
 或者：
 
-```sshconfig
+```sh
 IdentityFile ~/.ssh/test
 ```
 

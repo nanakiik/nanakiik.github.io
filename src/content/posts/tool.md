@@ -7,12 +7,12 @@ summary: 不实用小工具及其常见用法
 ---
 
 [static-web-server](https://github.com/static-web-server/static-web-server)
-```
+```sh
 static-web-server --root . -p 1234 -a 127.0.0.1
 ```
 
 [cmake](https://cmake.org/cmake/help/latest/)
-```
+```sh
 cmake -S . -B build  -G Ninja -A x64 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 cmake --build build --config Release 
 cmake --install build
@@ -23,7 +23,7 @@ cmake --find-package -DNAME=ZLIB -DCOMPILER_ID=GNU -DLANGUAGE=C -DMODE=LINK
 ```
 
 [git](https://git-scm.com/)
-```
+```sh
 git config --global --list
 git config user.name makishinanakishi
 git config user.email makishinanakishi@outlook.com
@@ -45,24 +45,24 @@ git submodule update --init --recursive --depth 1 --recommend-shallow
 ```
 
 [wireshark](https://www.wireshark.org/docs/man-pages/)
-```
+```sh
 tshark -D
 tshark -i 5 -f "host 1.1.1.1 and tcp port 80"
 ```
 
 [curl](https://curl.se/docs/manpage.html)
-```
+```sh
 curl -x "" -v -4 http://example.com
 ```
 
 [wsl](https://github.com/microsoft/WSL)
-```
+```sh
 https://learn.microsoft.com/en-us/windows/wsl/wsl-config
 wslc
 ```
 
 [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-```
+```sh
 yt-dlp --skip-download  --write-pages 
 yt-dlp --list-extractors
 ```
