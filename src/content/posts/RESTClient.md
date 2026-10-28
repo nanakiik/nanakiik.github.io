@@ -1,15 +1,16 @@
 ---
-title: REST Client
+title: REST Client使用方法
 createdAt: 2025-07-23
 category: tools
-tags: [cheatsheet,tutorial]
-summary: 不实用小工具及其常见用法
+tags: [cheatsheet, tutorial]
+summary: vscode拓展RESTClient使用方法
 ---
 
 [REST Client](https://github.com/Huachao/vscode-restclient) vscode拓展使用例子
 
 将以下内容复制到一个`1.http`即可发送请求查看响应
-```
+
+```bash
 @ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 
 GET https://api.github.com/repos/Huachao/vscode-restclient
