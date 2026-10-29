@@ -22,5 +22,9 @@
   {
     "name": "math",
     "slug": "math"
+  },
+  {
+    "name": "tool",
+    "slug": "tool"
   }
 ]
